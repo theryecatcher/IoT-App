@@ -1,0 +1,72 @@
+<rmd-ref-app-live-card
+	class="px-card"
+	id="refAppLiveDataDemo"
+	width="750"
+    height="400"
+	min=-1
+	max=4
+	units=""
+	threshold-low="0.1"
+	threshold-high="3"
+	rows="10"	
+	ws-url="wss://infy-iot-websocket-server.run.aws-usw02-pr.ice.predix.io/livestream/Tst8"
+>
+</rmd-ref-app-live-card>
+
+<script>
+    var chart = document.getElementById("refAppLiveDataDemo");
+    // var lineData = [ [(new Date()).getTime(), 70] ];
+    // chart.lineData = [];    
+    chart.context = {
+	    "pickerOptions": [
+	        {
+	            "sourceTagId": "R001-Startup",
+	            "meterUri": "/meter/R001",
+	            "thresholdHigh": 2,
+	            "thresholdLow": 0.5,
+	            "wsUrl": "wss://infy-iot-websocket-server.run.aws-usw02-pr.ice.predix.io/livestream/Tst8",
+	            "label": "R001",
+	            "colorIndex": 0
+	        },
+	        {
+	            "sourceTagId": "R002-Thread",
+	            "meterUri": "/meter/R002",
+	            "thresholdHigh": 2,
+	            "thresholdLow": 0.5,
+	            "wsUrl": "wss://infy-iot-websocket-server.run.aws-usw02-pr.ice.predix.io/livestream/Tst9",
+	            "label": "R002",
+	            "colorIndex": 1
+	        },
+	        {
+	            "sourceTagId": "R006-Continuous-Manual-Reject",
+	            "meterUri": "/meter/R006",
+	            "thresholdHigh": 2,
+	            "thresholdLow": 0.5,
+	            "wsUrl": "wss://infy-iot-websocket-server.run.aws-usw02-pr.ice.predix.io/livestream/Tst10",
+	            "label": "R006",
+	            "colorIndex": 2
+	        },
+	        {
+	            "sourceTagId": "R008-VISEEL-CC2-Blu-Registration",
+	            "meterUri": "/meter/R008",
+	            "thresholdHigh": 2,
+	            "thresholdLow": 0.5,
+	            "wsUrl": "wss://infy-iot-websocket-server.run.aws-usw02-pr.ice.predix.io/livestream/Tst11",
+	            "label": "R008",
+	            "colorIndex": 3
+	        },
+	        {
+	            "sourceTagId": "R033-VISBE1-BE-Ribbon-Position-DS",
+	            "meterUri": "/meter/R033",
+	            "thresholdHigh": 2,
+	            "thresholdLow": 0.5,
+	            "wsUrl": "wss://infy-iot-websocket-server.run.aws-usw02-pr.ice.predix.io/livestream/Tst12",
+	            "label": "R033",
+	            "colorIndex": 4
+	        }
+	    ]
+	};
+	console.log('chart class = ' + chart.id);
+</script>
+
+

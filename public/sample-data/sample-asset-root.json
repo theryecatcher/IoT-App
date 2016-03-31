@@ -1,0 +1,32 @@
+[
+    {
+        "uri": "parent",
+        "classification": "parent",
+        "description": "Plant",
+        "assetId": "Plant",
+        "parent": null,
+        "children": [
+            {
+                "uri": "child",
+                "classification": "child",
+                "description": "Line 1",
+                "assetId": "Line 1",
+                "parent": null
+            },
+            {
+                "uri": "child2",
+                "classification": "child",
+                "description": "Line 2",
+                "assetId": "Line 2",
+                "parent": null
+            },
+            {
+                "uri": "child3",
+                "classification": "child",
+                "description": "Line 3",
+                "assetId": "Line 3",
+                "parent": null
+            }
+        ]
+    }
+]
